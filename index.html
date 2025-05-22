@@ -33,7 +33,26 @@
   <div class="container">
     <source srcset="lwalmartwinner/curacao-capa.png" media="(max-width: 600px)">
     <source srcset="walmartwinner/curacao-capa.png" media="(max-width: 900px)">
-   <img src="images/curacao-capa.png" class="main" alt="afbeelding">
+  <style>
+  .container {
+    padding-top: 30vh; /* Usando viewport height para ser responsivo */
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Mantenha o resto do seu estilo existente */
+  .slick-dots li button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+  }
+  .description-text.hide {
+    display: none;
+  }
+</style>
 
    
     <div class="wrapper">
