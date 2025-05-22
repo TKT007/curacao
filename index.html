@@ -33,7 +33,17 @@
   <div class="container">
     <source srcset="lwalmartwinner/curacao-capa.png" media="(max-width: 600px)">
     <source srcset="walmartwinner/curacao-capa.png" media="(max-width: 900px)">
-    <img src="images/curacao-capa.png" class="main" alt="afbeelding">
+   <img src="images/curacao-capa.png" class="gradient-image" alt="afbeelding">
+
+<style>
+    .gradient-image {
+        display: block;
+        width: 100%;
+        position: relative;
+        -webkit-mask-image: linear-gradient(to bottom, white 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, white 70%, transparent 100%);
+    }
+</style>
     <div class="wrapper">
     
       <h1 class="header__title"></h1>
