@@ -18,6 +18,7 @@
 
 .slick-list {
   position: relative;
+  height: 97px !important; /* Força a altura */
 
   display: block;
   overflow: hidden;
