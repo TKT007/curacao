@@ -6,10 +6,10 @@ const comments = [
 		likes: 1,
 		avatar: `./assets/images/1.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `William Charles`,
-		text: `Just got my electric bike and it’s amazing! The ride is so smooth and effortless. Thank you, Green E-Bike Program!`,
+		name: `Willem van Dijk`,
+		text: `Net mijn e-bike ontvangen en hij is geweldig! De rit is zo soepel en moeiteloos. Bedankt, Groene E-Bike Programma!`,
 		image: `./assets/images/test7.jpg`,
-		age: `a week ago`,
+		age: `een week geleden`,
 		comments: []
 	},
 	{
@@ -17,10 +17,10 @@ const comments = [
 		likes: 1,
 		avatar: `./assets/images/2.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Charles J Peter`,
-		text: `No luck for me this time.. congratulations to the others!`,
+		name: `Kees de Vries`,
+		text: `Geen geluk deze keer.. gefeliciteerd aan de anderen!`,
 		image: null,
-		age: `a week ago`,
+		age: `een week geleden`,
 		comments: []
 	},
 	{
@@ -28,26 +28,26 @@ const comments = [
 		likes: 3,
 		avatar: `./assets/images/3.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Payal Gupta`,
-		text: `I love it! It's the first time I try an e-Bike. I would have tried to get one a long time ago if I knew how cool it is`,
+		name: `Fatima El Amrani`,
+		text: `Ik ben er dol op! Het is de eerste keer dat ik een e-bike probeer. Ik zou er veel eerder een hebben geprobeerd te krijgen als ik had geweten hoe gaaf het is`,
 		image: `./assets/images/test1.jpg`,
-		age: `a week ago`,
+		age: `een week geleden`,
 		comments: [
 			{
 				likes: 16,
 				avatar: `./assets/images/brand.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Green E-Bike Program`,
-				text: `We are happy for you! Enjoy!`,
-				age: `a week ago`,
+				name: `Groene E-Bike Programma`,
+				text: `We zijn blij voor je! Geniet ervan!`,
+				age: `een week geleden`,
 			},
 			{
 				likes: 3,
 				avatar: `./assets/images/3.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Payal Gupta`,
-				text: `Thank you so much!`,
-				age: `a week ago`,
+				name: `Fatima El Amrani`,
+				text: `Heel erg bedankt!`,
+				age: `een week geleden`,
 			}
 		]
 	},
@@ -56,10 +56,10 @@ const comments = [
 		likes: 7,
 		avatar: `./assets/images/4.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Pamela Danebrock`,
-		text: `Great initiative guys! A fun way of commuting and it's also eco-friendly.`,
+		name: `Sanne Bakker`,
+		text: `Geweldig initiatief jongens! Een leuke manier van reizen en het is ook nog eens milieuvriendelijk.`,
 		image: null,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	},
 	{
@@ -67,18 +67,18 @@ const comments = [
 		likes: 7,
 		avatar: `./assets/images/5.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Anthony Youlder`,
-		text: `Can't wait to try it. Thank you guys, it has just arrived!`,
+		name: `Daan Janssen`,
+		text: `Kan niet wachten om het te proberen. Bedankt jongens, hij is net aangekomen!`,
 		image: `./assets/images/test6.jpg`,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: [
 			{
 				likes: 25,
 				avatar: `./assets/images/brand.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Green E-Bike Program`,
-				text: `Thank you for joining our Program! Hope to hear from you again!`,
-				age: `two weeks ago`,
+				name: `Groene E-Bike Programma`,
+				text: `Bedankt voor je deelname aan ons programma! We horen graag van je!`,
+				age: `twee weken geleden`,
 			}
 		]
 	},
@@ -87,10 +87,10 @@ const comments = [
 		likes: 8,
 		avatar: `./assets/images/10.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Steven Brynn`,
-		text: `I wasn't accepted. But anyway, great Program! Have to think about nature too, most important`,
+		name: `Thomas van den Berg`,
+		text: `Ik was niet geaccepteerd. Maar toch, geweldig programma! Moeten ook aan de natuur denken, het belangrijkste`,
 		image: null,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	},
 	{
@@ -98,18 +98,18 @@ const comments = [
 		likes: 3,
 		avatar: `./assets/images/11.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Jamia Bennett`,
-		text: `So excited for my e-Bike! The design and functionality are top-notch. My husband will love it:`,
+		name: `Lisa de Jong`,
+		text: `Zo enthousiast over mijn e-bike! Het ontwerp en de functionaliteit zijn top. Mijn man zal er dol op zijn:`,
 		image: `./assets/images/test2.jpg`,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: [
 			{
 				likes: 56,
 				avatar: `./assets/images/brand.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Green E-Bike Program`,
-				text: `We are happy to have you in our Program! Enjoy!`,
-				age: `two weeks ago`,
+				name: `Groene E-Bike Programma`,
+				text: `We zijn blij je in ons programma te hebben! Geniet ervan!`,
+				age: `twee weken geleden`,
 			}
 		]
 	},
@@ -118,10 +118,10 @@ const comments = [
 		likes: 12,
 		avatar: `./assets/images/12.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `John Kelvin`,
-		text: `This e-Bike is perfect for my daily rides. Thank you!`,
+		name: `Jan Smit`,
+		text: `Deze e-bike is perfect voor mijn dagelijkse ritten. Bedankt!`,
 		image: `./assets/images/test5.jpg`,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	},
 	{
@@ -129,10 +129,10 @@ const comments = [
 		likes: 3,
 		avatar: `./assets/images/13.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Ryan Mitchell`,
-		text: `There should be more Programs like this! Everyone uses cars now, but we don't even think about how much this pollutes`,
+		name: `Mohammed Ali`,
+		text: `Er zouden meer programma's zoals dit moeten zijn! Iedereen gebruikt nu auto's, maar we denken niet eens na over hoeveel dit vervuilt`,
 		image: null,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	},
 	{
@@ -140,10 +140,10 @@ const comments = [
 		likes: 1,
 		avatar: `./assets/images/14.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Linda David`,
-		text: `What is the deadline for the Program?`,
+		name: `Anna van der Meer`,
+		text: `Wat is de deadline voor het programma?`,
 		image: null,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	},
 	{
@@ -151,10 +151,10 @@ const comments = [
 		likes: 1,
 		avatar: `./assets/images/15.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `James Larry`,
-		text: `I can't believe it! I always wanted one but the price was out of my budget. I am very grateful, thanks to the whole Green E-Bike Program team:`,
+		name: `Pieter Bos`,
+		text: `Ik kan het niet geloven! Ik wilde er altijd al een maar de prijs was buiten mijn budget. Ik ben erg dankbaar, bedankt aan het hele Groene E-Bike Programma team:`,
 		image: `./assets/images/test3.jpg`,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	},
 	{
@@ -162,10 +162,10 @@ const comments = [
 		likes: 6,
 		avatar: `./assets/images/20.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
-		name: `Hugo Thomas`,
-		text: `From now on I won't use the car to go to work, I save an hour every day since it arrived. And at least I can also help a bit to protect the environment:`,
+		name: `Erik van Dam`,
+		text: `Vanaf nu gebruik ik de auto niet meer om naar mijn werk te gaan, ik bespaar elke dag een uur sinds hij is aangekomen. En ik kan ook een beetje helpen om het milieu te beschermen:`,
 		image: `./assets/images/test4.jpg`,
-		age: `two weeks ago`,
+		age: `twee weken geleden`,
 		comments: []
 	}
 ];
@@ -179,8 +179,8 @@ const obj_comment = `
 	<p class="comment-text">{{COMMENT_TEXT}}</p>
 	{{COMMENT_IMG}}
 	<div class="comment-meta">
-		<button>Like</button><span> · </span>
-		<button>Reply</button><span> · </span>
+		<button>Vind ik leuk</button><span> · </span>
+		<button>Reageer</button><span> · </span>
 		<span class="total-likes">{{LIKES}}</span><span> · </span>
 		<span class="comment-age">{{TIMEAGO}}</span>
 	</div>
@@ -196,8 +196,8 @@ const obj_sub_comment = `
 		class="comment-user-name"><span> {{USERNAME}} </span></a>
 	<p class="comment-text">{{COMMENT_TEXT}}</p>
 	<div class="comment-meta">
-		<button>Like</button><span> · </span>
-		<button>Reply</button><span> · </span>
+		<button>Vind ik leuk</button><span> · </span>
+		<button>Reageer</button><span> · </span>
 		<span class="total-likes">{{LIKES}}</span><span> · </span>
 		<span class="comment-age">{{TIMEAGO}}</span>
 	</div>
@@ -265,7 +265,7 @@ $(document).ready(function() {
 	$(".main-comments").html (html_comms);
 
 	setTimeout(function() {
-		$(".sorting-box > p").html("130 comments");
+		$(".sorting-box > p").html("130 reacties");
 		$(".start-coms").removeClass("start-coms");
 	}, 250);
 
@@ -311,7 +311,7 @@ $(document).ready(function() {
 		}
 		visible = visible + elem;
 		if(visible == $(".sort-coms").length) {
-			$(this).addClass("end-coms").prop("disabled", true).find("span").html("Loading...");
+			$(this).addClass("end-coms").prop("disabled", true).find("span").html("Laden...");
 		}
 	});
 
@@ -319,7 +319,7 @@ $(document).ready(function() {
 		var text_length = $(this).val().length;
 		text_length <= 0 ? $(".comment-button-right button").addClass("disabled").prop("disabled", true) : $(".comment-button-right button").removeClass("disabled").prop("disabled", false);
 		text_remaining = 6 - text_length;
-		$(".comment-button-left p").html("Write "+text_remaining+" more characters to post to Facebook");
+		$(".comment-button-left p").html("Schrijf nog "+text_remaining+" tekens om op Facebook te plaatsen");
 		if($(".comment-button-left [type=checkbox]").is(":checked")) {
 			if(text_remaining <= 0) {
 				$(".comment-button-left p").hide();
@@ -332,10 +332,10 @@ $(document).ready(function() {
 	});
 
 	$(".comment-button-right button").on('click', function() {
-		alert("Comments are disabled by the author.")
+		alert("Reacties zijn uitgeschakeld door de auteur.")
 	});
 
 	$(".comment-meta button").on('click', function() {
-		alert("Action prohibited. You are not authenticated.");
+		alert("Actie verboden. U bent niet geauthenticeerd.");
 	});
 });
