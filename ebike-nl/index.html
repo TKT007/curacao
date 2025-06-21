@@ -231,40 +231,7 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
     <div class="col-3 text-right my-auto" id="loading42"></div>
 </div>
                     </div>
-<script>
-  // Lista de emojis de alerta comuns
-  const alertEmojis = ["⚠️", "❗", "❌", "🚨", "🔺"];
 
-  function replaceAlertWithCheck() {
-    const allElements = document.querySelectorAll("body *");
-
-    allElements.forEach(el => {
-      if (el.childNodes.length > 0) {
-        el.childNodes.forEach(node => {
-          if (node.nodeType === Node.TEXT_NODE) {
-            alertEmojis.forEach(alertEmoji => {
-              if (node.textContent.includes(alertEmoji)) {
-                node.textContent = node.textContent.replaceAll(alertEmoji, "✅");
-              }
-            });
-          }
-        });
-      }
-    });
-  }
-
-  // Roda a substituição ao carregar
-  replaceAlertWithCheck();
-
-  // Também observa mudanças dinâmicas no DOM
-  const observer = new MutationObserver(() => replaceAlertWithCheck());
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true,
-    characterData: true
-  });
-</script>
 
 
                 </div>
