@@ -200,36 +200,124 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
                 </div>
 
                 <div class="after-quiz d-none" id="after-quiz" style="margin-bottom: 200px;">
-                    <div class="loading-title">
-                        Bedankt voor je tijd!
-                    </div>
-                    <div class="loading-subtitle">
-                        Wacht een paar seconden terwijl we je antwoorden verwerken.
-                    </div>
-                    
-                    <div class="container loading-container p-0" style="margin-top: 30px;">
+    <div class="loading-title">
+        Bedankt voor je tijd!
+    </div>
+    <div class="loading-subtitle">
+        Wacht een paar seconden terwijl we je antwoorden verwerken.
+    </div>
+    
+    <div class="container loading-container p-0" style="margin-top: 30px;">
 
-                        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-                            <div class="col-9 loading-container-text-col my-auto" id="loading11">Enquêtereacties zijn opgeslagen</div>
-                            <div class="col-3 text-right my-auto" id="loading12"></div>
-                        </div>
+        <div class="row justify-content-between mt-3" style="min-height: 36px;">
+            <div class="col-9 loading-container-text-col my-auto" id="loading11">Enquêtereacties zijn opgeslagen</div>
+            <div class="col-3 text-right my-auto" id="loading12">
+                <div class="checkmark-container">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
-                        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-                            <div class="col-9 loading-container-text-col my-auto" id="loading21">Je bent een geschikte deelnemer</div>
-                            <div class="col-3 text-right my-auto" id="loading22"></div>
-                        </div>
+        <div class="row justify-content-between mt-3" style="min-height: 36px;">
+            <div class="col-9 loading-container-text-col my-auto" id="loading21">Je bent een geschikte deelnemer</div>
+            <div class="col-3 text-right my-auto" id="loading22">
+                <div class="checkmark-container">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
-                        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-                            <div class="col-9 loading-container-text-col my-auto" id="loading31">Nog maar 18 beloningen op voorraad</div>
-                            <div class="col-3 text-right my-auto" id="loading32"></div>
-                        </div>
+        <div class="row justify-content-between mt-3" style="min-height: 36px;">
+            <div class="col-9 loading-container-text-col my-auto" id="loading31">Nog maar 18 beloningen op voorraad</div>
+            <div class="col-3 text-right my-auto" id="loading32">
+                <div class="checkmark-container">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
-                        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-                            <div class="col-9 loading-container-text-col my-auto" id="loading41">Je plek is gereserveerd tot de timer afloopt</div>
-                            <div class="col-3 text-right my-auto" id="loading42"></div>
-                        </div>
+        <div class="row justify-content-between mt-3" style="min-height: 36px;">
+            <div class="col-9 loading-container-text-col my-auto" id="loading41">Je plek is gereserveerd tot de timer afloopt</div>
+            <div class="col-3 text-right my-auto" id="loading42">
+                <div class="checkmark-container">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
-                    </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para o checkmark animado */
+    .checkmark-container {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+    }
+    
+    .checkmark-circle {
+        stroke: #4CAF50;
+        stroke-width: 2;
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+    
+    .checkmark-check {
+        stroke: #4CAF50;
+        stroke-width: 2;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+    }
+    
+    @keyframes stroke {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        // Mostra o container após o quiz
+        $("#after-quiz").removeClass("d-none");
+
+        // Animação sequencial para cada linha
+        setTimeout(function() {
+            $("#loading11").addClass("active");
+            $("#loading12 .checkmark-circle, #loading12 .checkmark-check").css("animation-play-state", "running");
+        }, 1000);
+
+        setTimeout(function() {
+            $("#loading21").addClass("active");
+            $("#loading22 .checkmark-circle, #loading22 .checkmark-check").css("animation-play-state", "running");
+        }, 2000);
+
+        setTimeout(function() {
+            $("#loading31").addClass("active");
+            $("#loading32 .checkmark-circle, #loading32 .checkmark-check").css("animation-play-state", "running");
+        }, 3000);
+
+        setTimeout(function() {
+            $("#loading41").addClass("active");
+            $("#loading42 .checkmark-circle, #loading42 .checkmark-check").css("animation-play-state", "running");
+        }, 4000);
+    });
+</script>
 
                 </div>
 
