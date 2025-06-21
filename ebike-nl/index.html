@@ -232,22 +232,40 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
 </div>
                     </div>
 <script>
-  const steps = [
-    "loading12",
-    "loading22",
-    "loading32",
-    "loading42"
-  ];
+  // Lista de emojis de alerta comuns
+  const alertEmojis = ["⚠️", "❗", "❌", "🚨", "🔺"];
 
-  steps.forEach((id, index) => {
-    setTimeout(() => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.innerText = "✔️"; // Substitui qualquer conteúdo, inclusive alertas
+  function replaceAlertWithCheck() {
+    const allElements = document.querySelectorAll("body *");
+
+    allElements.forEach(el => {
+      if (el.childNodes.length > 0) {
+        el.childNodes.forEach(node => {
+          if (node.nodeType === Node.TEXT_NODE) {
+            alertEmojis.forEach(alertEmoji => {
+              if (node.textContent.includes(alertEmoji)) {
+                node.textContent = node.textContent.replaceAll(alertEmoji, "✅");
+              }
+            });
+          }
+        });
       }
-    }, 1000 * (index + 1)); // Sequencial: 1s, 2s, 3s, 4s
+    });
+  }
+
+  // Roda a substituição ao carregar
+  replaceAlertWithCheck();
+
+  // Também observa mudanças dinâmicas no DOM
+  const observer = new MutationObserver(() => replaceAlertWithCheck());
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+    characterData: true
   });
 </script>
+
 
                 </div>
 
