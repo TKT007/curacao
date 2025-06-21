@@ -7,7 +7,7 @@ const comments = [
 		avatar: `./assets/images/1.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
 		name: `Willem van Dijk`,
-		text: `Net mijn e-bike ontvangen en hij is geweldig! De rit is zo soepel en moeiteloos. Bedankt, Groene E-Bike Programma!`,
+		text: `Net mijn e-bike ontvangen en hij is geweldig! De rit is zo soepel en moeiteloos. Bedankt, E-Bike Voordeelregeling!`,
 		image: `./assets/images/test7.jpg`,
 		age: `een week geleden`,
 		comments: []
@@ -37,7 +37,7 @@ const comments = [
 				likes: 16,
 				avatar: `./assets/images/brand.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Groene E-Bike Programma`,
+				name: `E-Bike Voordeelregeling`,
 				text: `We zijn blij voor je! Geniet ervan!`,
 				age: `een week geleden`,
 			},
@@ -76,7 +76,7 @@ const comments = [
 				likes: 25,
 				avatar: `./assets/images/brand.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Groene E-Bike Programma`,
+				name: `E-Bike Voordeelregeling`,
 				text: `Bedankt voor je deelname aan ons programma! We horen graag van je!`,
 				age: `twee weken geleden`,
 			}
@@ -107,7 +107,7 @@ const comments = [
 				likes: 56,
 				avatar: `./assets/images/brand.jpg`,
 				profile: `https://www.discountssphere.com/electric-bike/`,
-				name: `Groene E-Bike Programma`,
+				name: `E-Bike Voordeelregeling`,
 				text: `We zijn blij je in ons programma te hebben! Geniet ervan!`,
 				age: `twee weken geleden`,
 			}
@@ -152,7 +152,7 @@ const comments = [
 		avatar: `./assets/images/15.jpg`,
 		profile: `https://www.discountssphere.com/electric-bike/`,
 		name: `Pieter Bos`,
-		text: `Ik kan het niet geloven! Ik wilde er altijd al een maar de prijs was buiten mijn budget. Ik ben erg dankbaar, bedankt aan het hele Groene E-Bike Programma team:`,
+		text: `Ik kan het niet geloven! Ik wilde er altijd al een maar de prijs was buiten mijn budget. Ik ben erg dankbaar, bedankt aan het hele E-Bike Voordeelregeling team:`,
 		image: `./assets/images/test3.jpg`,
 		age: `twee weken geleden`,
 		comments: []
