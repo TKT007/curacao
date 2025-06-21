@@ -210,7 +210,8 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
                     
                     <div class="container loading-container p-0" style="margin-top: 30px;">
 
-                     <div class="row justify-content-between mt-3" style="min-height: 36px;">
+                  <!-- SEU CÓDIGO ORIGINAL (não mexa em nada aqui) -->
+<div class="row justify-content-between mt-3" style="min-height: 36px;">
     <div class="col-9 loading-container-text-col my-auto" id="loading11">Enquêtereacties zijn opgeslagen</div>
     <div class="col-3 text-right my-auto" id="loading12" style="display:none;"></div>
 </div>
@@ -229,6 +230,68 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
     <div class="col-9 loading-container-text-col my-auto" id="loading41">Je plek is gereserveerd tot de timer afloopt</div>
     <div class="col-3 text-right my-auto" id="loading42" style="display:none;"></div>
 </div>
+
+<!-- ADICIONE APENAS ESTE CSS -->
+<style>
+    /* Cria os checks animados sem mexer no HTML existente */
+    [id^="loading"]:not([id$="1"]) {
+        position: relative;
+    }
+    
+    [id^="loading"]:not([id$="1"])::after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%) scale(0);
+        width: 24px;
+        height: 24px;
+        background: #4CAF50;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    [id^="loading"]:not([id$="1"])::before {
+        content: "✓";
+        position: absolute;
+        right: 23px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s 0.2s;
+    }
+    
+    .animated-check [id^="loading"]:not([id$="1"])::after {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+    
+    .animated-check [id^="loading"]:not([id$="1"])::before {
+        opacity: 1;
+    }
+</style>
+
+<!-- ADICIONE APENAS ESTE SCRIPT -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ativa a animação sequencial
+        setTimeout(() => {
+            document.querySelector('.loading-container').classList.add('animated-check');
+            
+            // Ativa cada linha com 0.7s de intervalo
+            const rows = document.querySelectorAll('[id^="loading"]:not([id$="1"])');
+            rows.forEach((row, index) => {
+                setTimeout(() => {
+                    row.classList.add('active-check');
+                }, index * 700);
+            });
+        }, 500); // Pequeno delay inicial
+    });
+</script>
                     </div>
 
                 </div>
