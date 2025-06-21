@@ -211,92 +211,24 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
                     <div class="container loading-container p-0" style="margin-top: 30px;">
 
                       <div class="row justify-content-between mt-3" style="min-height: 36px;">
-            <div class="col-9 loading-container-text-col my-auto" id="loading11">Enquêtereacties zijn opgeslagen</div>
-            <div class="col-3 text-right my-auto check-container" id="loading12"></div>
-        </div>
-
-        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-            <div class="col-9 loading-container-text-col my-auto" id="loading21">Je bent een geschikte deelnemer</div>
-            <div class="col-3 text-right my-auto check-container" id="loading22"></div>
-        </div>
-
-        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-            <div class="col-9 loading-container-text-col my-auto" id="loading31">Nog maar 18 beloningen op voorraad</div>
-            <div class="col-3 text-right my-auto check-container" id="loading32"></div>
-        </div>
-
-        <div class="row justify-content-between mt-3" style="min-height: 36px;">
-            <div class="col-9 loading-container-text-col my-auto" id="loading41">Je plek is gereserveerd tot de timer afloopt</div>
-            <div class="col-3 text-right my-auto check-container" id="loading42"></div>
-        </div>
-
-    </div>
+    <div class="col-9 loading-container-text-col my-auto" id="loading11">Enquêtereacties zijn opgeslagen</div>
+    <div class="col-3 text-right my-auto" id="loading12" style="display:none;"></div>
 </div>
 
-<style>
-    /* Esconde qualquer conteúdo indesejado */
-    #loading12, #loading22, #loading32, #loading42 {
-        visibility: hidden !important;
-    }
-    
-    /* Estilo para o check animado */
-    .check-container::after {
-        content: "✅";
-        font-size: 24px;
-        display: inline-block;
-        animation: checkAnimation 0.5s ease-out;
-        visibility: visible !important;
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    
-    .check-container.active::after {
-        opacity: 1;
-        transform: scale(1);
-    }
-    
-    @keyframes checkAnimation {
-        0% {
-            opacity: 0;
-            transform: scale(0.5) rotate(-30deg);
-        }
-        50% {
-            transform: scale(1.2) rotate(10deg);
-        }
-        100% {
-            opacity: 1;
-            transform: scale(1) rotate(0);
-        }
-    }
-</style>
+<div class="row justify-content-between mt-3" style="min-height: 36px;">
+    <div class="col-9 loading-container-text-col my-auto" id="loading21">Je bent een geschikte deelnemer</div>
+    <div class="col-3 text-right my-auto" id="loading22" style="display:none;"></div>
+</div>
 
-<script>
-    $(document).ready(function() {
-        // Mostra o container após o quiz
-        $("#after-quiz").removeClass("d-none");
+<div class="row justify-content-between mt-3" style="min-height: 36px;">
+    <div class="col-9 loading-container-text-col my-auto" id="loading31">Nog maar 18 beloningen op voorraad</div>
+    <div class="col-3 text-right my-auto" id="loading32" style="display:none;"></div>
+</div>
 
-        // Animação sequencial para cada linha
-        setTimeout(function() {
-            $("#loading11").addClass("active");
-            $("#loading12").addClass("active");
-        }, 1000);
-
-        setTimeout(function() {
-            $("#loading21").addClass("active");
-            $("#loading22").addClass("active");
-        }, 2000);
-
-        setTimeout(function() {
-            $("#loading31").addClass("active");
-            $("#loading32").addClass("active");
-        }, 3000);
-
-        setTimeout(function() {
-            $("#loading41").addClass("active");
-            $("#loading42").addClass("active");
-        }, 4000);
-    });
-</script>
+<div class="row justify-content-between mt-3" style="min-height: 36px;">
+    <div class="col-9 loading-container-text-col my-auto" id="loading41">Je plek is gereserveerd tot de timer afloopt</div>
+    <div class="col-3 text-right my-auto" id="loading42" style="display:none;"></div>
+</div>
                     </div>
 
                 </div>
