@@ -210,88 +210,102 @@ Je moet ouder zijn dan 18 jaar en in Nederland wonen.                           
                     
                     <div class="container loading-container p-0" style="margin-top: 30px;">
 
-                  <!-- SEU CÓDIGO ORIGINAL (não mexa em nada aqui) -->
-<div class="row justify-content-between mt-3" style="min-height: 36px;">
-    <div class="col-9 loading-container-text-col my-auto" id="loading11">Enquêtereacties zijn opgeslagen</div>
-    <div class="col-3 text-right my-auto" id="loading12" style="display:none;"></div>
-</div>
-
-<div class="row justify-content-between mt-3" style="min-height: 36px;">
-    <div class="col-9 loading-container-text-col my-auto" id="loading21">Je bent een geschikte deelnemer</div>
-    <div class="col-3 text-right my-auto" id="loading22" style="display:none;"></div>
-</div>
-
-<div class="row justify-content-between mt-3" style="min-height: 36px;">
-    <div class="col-9 loading-container-text-col my-auto" id="loading31">Nog maar 18 beloningen op voorraad</div>
-    <div class="col-3 text-right my-auto" id="loading32" style="display:none;"></div>
-</div>
-
-<div class="row justify-content-between mt-3" style="min-height: 36px;">
-    <div class="col-9 loading-container-text-col my-auto" id="loading41">Je plek is gereserveerd tot de timer afloopt</div>
-    <div class="col-3 text-right my-auto" id="loading42" style="display:none;"></div>
-</div>
-
-<!-- ADICIONE APENAS ESTE CSS -->
-<style>
-    /* Cria os checks animados sem mexer no HTML existente */
-    [id^="loading"]:not([id$="1"]) {
-        position: relative;
-    }
+        <div class="after-quiz-container" style="margin-bottom: 200px;">
+    <div class="loading-title">Bedankt voor je tijd!</div>
+    <div class="loading-subtitle">Wacht een paar seconden terwijl we je antwoorden verwerken.</div>
     
-    [id^="loading"]:not([id$="1"])::after {
-        content: "";
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%) scale(0);
-        width: 24px;
-        height: 24px;
-        background: #4CAF50;
-        border-radius: 50%;
-        opacity: 0;
-        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    
-    [id^="loading"]:not([id$="1"])::before {
-        content: "✓";
-        position: absolute;
-        right: 23px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: white;
-        font-size: 14px;
-        font-weight: bold;
-        opacity: 0;
-        transition: opacity 0.3s 0.2s;
-    }
-    
-    .animated-check [id^="loading"]:not([id$="1"])::after {
-        opacity: 1;
-        transform: translateY(-50%) scale(1);
-    }
-    
-    .animated-check [id^="loading"]:not([id$="1"])::before {
-        opacity: 1;
-    }
-</style>
+    <div class="check-animation-wrapper">
+        <!-- Item 1 -->
+        <div class="check-item">
+            <div class="text-col">Enquêtereacties zijn opgeslagen</div>
+            <div class="check-col" style="display:none;"></div>
+            <div class="animated-check"></div>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="check-item">
+            <div class="text-col">Je bent een geschikte deelnemer</div>
+            <div class="check-col" style="display:none;"></div>
+            <div class="animated-check"></div>
+        </div>
+        
+        <!-- Item 3 -->
+        <div class="check-item">
+            <div class="text-col">Nog maar 18 beloningen op voorraad</div>
+            <div class="check-col" style="display:none;"></div>
+            <div class="animated-check"></div>
+        </div>
+        
+        <!-- Item 4 -->
+        <div class="check-item">
+            <div class="text-col">Je plek is gereserveerd tot de timer afloopt</div>
+            <div class="check-col" style="display:none;"></div>
+            <div class="animated-check"></div>
+        </div>
+    </div>
 
-<!-- ADICIONE APENAS ESTE SCRIPT -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Ativa a animação sequencial
-        setTimeout(() => {
-            document.querySelector('.loading-container').classList.add('animated-check');
+    <style>
+        .check-animation-wrapper {
+            margin-top: 30px;
+        }
+        
+        .check-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 36px;
+            margin-top: 12px;
+            position: relative;
+        }
+        
+        .text-col {
+            width: 75%;
+        }
+        
+        .check-col {
+            width: 25%;
+        }
+        
+        .animated-check {
+            position: absolute;
+            right: 15px;
+            width: 24px;
+            height: 24px;
+            background: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(0.5) rotate(-30deg);
+            transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .animated-check::after {
+            content: "✓";
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .check-item.active .animated-check {
+            opacity: 1;
+            transform: scale(1) rotate(0);
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.check-item');
             
-            // Ativa cada linha com 0.7s de intervalo
-            const rows = document.querySelectorAll('[id^="loading"]:not([id$="1"])');
-            rows.forEach((row, index) => {
+            items.forEach((item, index) => {
                 setTimeout(() => {
-                    row.classList.add('active-check');
+                    item.classList.add('active');
                 }, index * 700);
             });
-        }, 500); // Pequeno delay inicial
-    });
-</script>
+        });
+    </script>
+</div>
                     </div>
 
                 </div>
