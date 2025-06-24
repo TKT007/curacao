@@ -471,7 +471,7 @@ button.load-more {
         $(".question-number i").html($(".question").length);
     
         setTimeout(function() {
-            $(".sorting-box > p").html("130 opmerkingen");
+            $(".sorting-box > p").html("130 comments");
             $(".start-coms").removeClass("start-coms");
         }, 250);
     
@@ -517,7 +517,7 @@ button.load-more {
             }
             visible = visible + elem;
             if(visible == $(".sort-coms").length) {
-                $(this).addClass("end-coms").prop("disabled", true).find("span").html("Laden...");
+                $(this).addClass("end-coms").prop("disabled", true).find("span").html("Loading...");
             }
         });
     
