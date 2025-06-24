@@ -102,39 +102,44 @@
     
     <style>
 .comments {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 24px;
+    padding-right: 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Espaçamento ajustado por dispositivo */
 @media (min-width: 768px) {
     .comments {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 48px;
+        padding-right: 48px;
     }
 }
 
 @media (min-width: 1024px) {
     .comments {
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 64px;
+        padding-right: 64px;
     }
 }
 
-/* Ajusta o botão "Load more comments" */
+/* Botão "Load more comments" com mais largura e mais padding */
 button.load-more {
-    max-width: 600px;
+    max-width: 300px;
     width: 100%;
-    margin: 1rem auto;
+    padding: 16px 32px; /* ↑↓ 16px | ←→ 32px */
+    font-size: 1rem;
+    margin: 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    gap: 10px;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
+
     
     </style>
 <div class="comments">
