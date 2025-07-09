@@ -25,7 +25,7 @@ p {
 }
 /* header */
 header {
-    background: #f3bc07;
+    background: #fdd504;
 }
 .header_logo {
     background-size: contain;
@@ -113,7 +113,7 @@ header {
     font-size: 36px;
 }
 .button {
-    background: #f3bc07;
+    background: #fdd504;
     font-weight: 800;
     color: #fff;
     font-size: 26px;
