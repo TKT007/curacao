@@ -10,30 +10,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   
-  <script type="text/javascript">
-    function skroCb(cb) {
-        var r = cb.trackingDomain + "/click", l = new RegExp(r + "/?(\\d*)"),
-            c = document.querySelectorAll('a[href*="' + r + '"]');
-        for (var n = 0; n < c.length; n++) {
-            var a = l.exec(c[n].href);
-            a && (c[n].href = "https://" + a[0] + "?trck=" + cb.token)
-        }
-    }
-
-    (function () {
-        var t = new URLSearchParams(window.location.search);
-        if (t.get("trck") === "" || t.get("trck") === null) {
-            t.set("trck", "eyJjcGlkIjoiODBkZTVjYzctMGJiYy00Y2NmLWI5NmEtNWRkMmUyNmU3ZGQ0IiwiciI6MCwicCI6MCwibCI6MH0=")
-        }
-        t.set("ref", document.referrer);
-        var e = document.createElement("script");
-        e.type = "text/javascript";
-        e.async = !0;
-        e.src = "https://skrotrack.com/landing?callback=skroCb&" + decodeURIComponent(t.toString());
-        var r = document.getElementsByTagName("script")[0];
-        r.parentNode.insertBefore(e, r)
-    })();
-  </script>
+ 
 </head>
 <body>
   <picture>
@@ -105,7 +82,7 @@
         </div>
 
         <div class="quest">
-          <a href="https://skrotrack.com/click" class="btn btn-final">Doorgaan</a>
+          <a href="https://fb.track-conv.shop/click" class="btn btn-final">Doorgaan</a>
           <br>
         </div>
       </div>
